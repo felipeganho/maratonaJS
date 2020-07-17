@@ -1,14 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { signIn } from './SignInActions'; 
 
 const SignIn = (props) => {
-    const { signIn } = props;
+    const { signIn, account } = props;
+
+    if(account){
+        return <Redirect to="/manage/links" />
+    }
 
     const submitHandler = (e) => {
         e.preventDefault();
-        signIn({email: 'teste@testando.com', password: '123456'});
+
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+        signIn(data);
     };
 
     return (
