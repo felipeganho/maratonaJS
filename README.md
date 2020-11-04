@@ -2,7 +2,7 @@
 
 # Sobre
 
-Este projeto foi desenvolvido durante a Maratona JS ministrada pelo grande [Emerson Broga](https://emersonbroga.com/e/sobre/). O projeto consiste em um gerenciador de links, onde após o usuário se cadastrar ele pode salvar os links que lhe são importantes.
+Este projeto foi desenvolvido durante a Maratona JS ministrada pelo [Emerson Broga](https://emersonbroga.com/e/sobre/). O projeto consiste em um gerenciador de links onde após o usuário se cadastrar ele pode salvar links importantes.
 
 # Tecnologias
 
